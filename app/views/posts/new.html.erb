@@ -1,0 +1,11 @@
+<div class="transparent-box span4 offset4 text-center">
+  <h2> Upload your Pixture!
+    
+    <%= simple_form_for @post do |f| %>
+    <br/>
+    <%= f.input :title, placeholder: 'eg. Trees' %>
+    <%= f.input :description, placeholder: 'eg. These trees are over 500 years old! They were actually planted by Mr. Tuttle.' %>
+    <%= f.button :submit %>
+    <% end %>
+  </h2>
+</div>
