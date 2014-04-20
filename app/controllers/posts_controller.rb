@@ -15,14 +15,14 @@ class PostsController < ApplicationController
   def create
     Post.create( post_params )
    
-    redirect_to '/posts'
+    redirect_to posts_path
     
     
   end
   
   private
   def post_params
-    params.require(:post).permit(:title, :description)
+    params.require(:post).permit(:title, :description, :image)
   end
     
   
